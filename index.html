@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriFinTech Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="min-h-screen">
+        <!-- Navigation -->
+        <nav class="bg-green-700 text-white shadow-lg">
+            <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-leaf text-2xl"></i>
+                    <span class="text-xl font-semibold">AgriFinTech</span>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#" class="hover:text-green-200">Market Data</a>
+                    <a href="#" class="hover:text-green-200">Price Predictions</a>
+                    <a href="#" class="hover:text-green-200">Financial Services</a>
+                    <a href="#" class="hover:text-green-200">About</a>
+                </div>
+                <button class="md:hidden">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="bg-green-600 text-white py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">AI-Powered Market Intelligence</h1>
+                <p class="text-xl mb-8 max-w-2xl mx-auto">Empowering smallholder farmers with real-time market data and financial solutions</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <button class="bg-white text-green-700 px-6 py-3 rounded-lg font-medium hover:bg-green-50 transition">Get Started</button>
+                    <button class="border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-green-700 transition">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Section -->
+        <section class="py-12 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Try Our Solutions</h2>
+                
+                <div class="flex flex-wrap justify-center gap-4 mb-8">
+                    <button id="market-data-btn" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-medium transition">
+                        <i class="fas fa-chart-line mr-2"></i>Get Market Data
+                    </button>
+                    <button id="prediction-btn" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-medium transition">
+                        <i class="fas fa-robot mr-2"></i>Get Price Prediction
+                    </button>
+                    <button id="finance-btn" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-medium transition">
+                        <i class="fas fa-wallet mr-2"></i>View Financial Services
+                    </button>
+                </div>
+                
+                <div id="results" class="bg-white p-6 rounded-lg shadow-md max-w-3xl mx-auto"></div>
+                
+                <script src="script.js"></script>
+                
+                <h3 class="text-2xl font-bold text-center mt-12 mb-6 text-gray-800">Our Solutions</h3>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                        <div class="text-green-600 mb-4">
+                            <i class="fas fa-chart-line text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Market Intelligence</h3>
+                        <p class="text-gray-600">Real-time crop prices, demand trends, and market analysis powered by AI.</p>
+                    </div>
+                    
+                    <!-- Feature 2 -->
+                    <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                        <div class="text-green-600 mb-4">
+                            <i class="fas fa-robot text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Price Predictions</h3>
+                        <p class="text-gray-600">AI-driven forecasts to help you decide when and where to sell your produce.</p>
+                    </div>
+                    
+                    <!-- Feature 3 -->
+                    <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                        <div class="text-green-600 mb-4">
+                            <i class="fas fa-wallet text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Financial Services</h3>
+                        <p class="text-gray-600">Access to microloans, insurance, and digital payment solutions tailored for farmers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white py-8">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-4 md:mb-0">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-leaf text-2xl"></i>
+                            <span class="text-xl font-semibold">AgriFinTech</span>
+                        </div>
+                        <p class="mt-2 text-gray-400">Empowering farmers with AI and financial technology</p>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-green-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-green-400"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-green-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-green-400"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="border-t border-gray-700 mt-6 pt-6 text-center text-gray-400">
+                    <p>&copy; 2023 AgriFinTech Solutions. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
